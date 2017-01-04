@@ -1,21 +1,32 @@
 /**index.wxss**/
-.userinfo {
+.todos {
+  padding: 10px;
+}
+
+.todo-item.completed {
+  color: #999;
+}
+
+.add-todo {
+  margin-top: 100px;
+}
+
+.filters {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+} 
+
+.filters text {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  text-align: center;
+  flex: 1
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
+.filters text.active {
+  border-color: #09bb07;
+  background-color: #09bb07;
+  color: #ffffff;
 }
