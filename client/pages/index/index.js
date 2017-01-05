@@ -11,7 +11,7 @@ const pageConfig = {
 };
 
 const mapStateToData = state => ({
-    time: state._time.time
+    time: state._time.time,
 });
 
 const mapDispatchToPage = dispatch => ({
