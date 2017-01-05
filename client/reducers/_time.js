@@ -1,7 +1,7 @@
 let assign = require('../utils/Object').assign;
 
 function _time(state = {}, action) {
-    console.log('state ', state, '/n action ', action);
+    console.log('state:', state, '\naction:', action);
     switch (action.type) {
         case 'GET_TIME_REQUEST':
             return assign({}, state, { frozen: true });
