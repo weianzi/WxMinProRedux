@@ -20,6 +20,12 @@
     )
   }
 }*/
+
+/**
+* 以上是ES6写法，小程序没正确识别。
+* 以下是用babel转化后代码
+**/
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });

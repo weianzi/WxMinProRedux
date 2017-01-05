@@ -1,13 +1,7 @@
-const Redux = require('../libs/redux.js')
-const combineReducers = Redux.combineReducers
-const todos = require('./todos.js')
-const visibilityFilter = require('./visibilityFilter.js')
-const _time = require('./_time.js')
+const Redux = require('../libs/redux');
+const combineReducers = Redux.combineReducers;
+const _time = require('./_time');
 
-const todoApp = combineReducers({
-  todos,
-  visibilityFilter,
-  _time
-})
+const todoApp = combineReducers({ _time });
 
-module.exports = todoApp
+module.exports = todoApp;

@@ -1,25 +1,4 @@
-<!--index.wxml-->
 <view class="container">
-  <view class="filters">
-    <text 
-      wx:for="{{filters}}" 
-      wx:key="{{index}}"
-      bindtap="applyFilter" 
-      id="{{item.key}}" 
-      class="{{visibilityFilter == item.key ? 'active' : ''}}"
-    >{{item.text}}</text>
-  </view>
-
-  <view class="todos">
-    <view wx:for="{{todos}}" wx:key="{{index}}" class="todo-item {{item.completed ? 'completed' : ''}}" id="{{item.id}}" bindtap="handleCheck">
-      <icon type="{{item.completed ? 'success_circle' : 'circle'}}" size="18"/> {{item.text}}
-    </view>
-  </view>
-   
-  <form class="add-todo" bindsubmit="addTodo">
-    <input name="todo" class="todo-input" placeholder="请输入"/>
-    <button formType="submit">添加</button>
-  </form>
     <button bindtap="getMytime">测试异步</button>
-    {{time}}
+    <p>{{time}}</p>
 </view>
